@@ -1,0 +1,154 @@
+/*Los paleta de colores está en https://color.adobe.com/es/mythemes?viewTheme
+
+Con @media se realiza adaptación a tamaño de pantalla. Se ha pensado en 3 tipos: Navegador desktop pantalla completa (>1000 px), navegador desktop a mitad de pantalla (500px-1000px) y pantalla celular iphone 7 plus(<500px).
+*/
+* {
+  background-color: white;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  overflow: visible; /* Hace visible el scroll */
+}
+header {
+  text-align: center;
+  font-size: 4em;
+  font-weight: bolder;
+  background-color: black;
+  color: #5688ba;
+  padding: 2px 2px;
+}
+nav ul {
+  display: flex;
+  background-color: #5688ba;
+  justify-content: left;
+}
+nav li {
+  padding: 6px 12px;
+  flex-direction: row;
+  background-color: #5688ba;
+  list-style-type: none;
+  font-weight: bolder;
+  font-size: 1.6em;
+}
+@media (min-width: 500px) {
+  nav li {
+    font-size: 1.2em;
+  }
+}
+
+@media (hover: hover) {
+  nav li:hover {
+    background-color: black;
+    color: #5688ba;
+  }
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0% 1vw;
+  justify-content: center;
+}
+.columna {
+  box-sizing: border-box;
+  flex-basis: 95%;
+  max-width: 95%;
+  padding: 0% 1vw;
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .columna {
+    box-sizing: border-box;
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 0% 1vw;
+  }
+}
+@media (min-width: 1000px) {
+  .columna {
+    box-sizing: border-box;
+    flex-basis: 25%;
+    max-width: 25%;
+    padding: 0 1vw;
+  }
+}
+article {
+  margin: 15px 0px;
+  vertical-align: middle;
+  border-radius: 0% 0% 1% 1%;
+  box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+article h1 {
+  background-color: black;
+  font-size: 2em;
+  text-align: center;
+  color: white;
+  padding-bottom: 0.2em;
+}
+@media (min-width: 500px) {
+  article h1 {
+    font-size: 1.3em;
+  }
+}
+article img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0px 0px 1% 1%;
+  vertical-align: middle;
+  object-fit: contain;
+}
+#fondoBorroso {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* ; Black w/ opacity */
+  backdrop-filter: blur(30px);
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /*Sit on top  */
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 90%;
+  overflow: auto; /*Enable scroll if needed*/
+  border-radius: 0.5%;
+  box-shadow: 0px 0px 5px #5688ba;
+}
+/* El botón para cerrar */
+.cerrar {
+  color: #5688ba;
+  background-color: black;
+  font-size: 2.5em;
+  font-weight: bold;
+  float: right;
+  margin-top: 0%;
+  margin-right: 2.5%;
+}
+article div h2 {
+  text-align: center;
+  color: #5688ba;
+  font-size: 2.5em;
+  background-color: black;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 2%;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #5688ba;
+  color: black;
+  font-weight: bolder;
+}
