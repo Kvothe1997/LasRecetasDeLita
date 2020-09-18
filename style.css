@@ -136,7 +136,7 @@ article img {
   margin-top: 0%;
   margin-right: 2.5%;
 }
-article div h2 {
+.modal h2 {
   text-align: center;
   color: #5688ba;
   font-size: 2.5em;
@@ -144,6 +144,32 @@ article div h2 {
   padding-left: 15%;
   padding-right: 15%;
   padding-bottom: 2%;
+  grid-area: a;
+}
+.modalGrid {
+  position: relative;
+  display: grid;
+  grid:
+    "a b"
+    "a c"
+    "d d";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+.modalGrid img {
+  /* max-width: auto;
+  max-height: auto; */
+  grid-area: a;
+  /* align-self: flex-start; */
+}
+.modalGrid h3 {
+  grid-area: b;
+}
+.modalGrid ul {
+  grid-area: c;
+}
+.modalContent {
+  grid-area: d;
 }
 footer {
   text-align: center;
