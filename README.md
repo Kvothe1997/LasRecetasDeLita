@@ -29,7 +29,7 @@ Responsive static web application (HTML, CSS y JS). Estoy desarrollando una pág
   <li>EventListener anidados</li>
   <li>for</li>
 </ul>
-<footer>
+
 **Nota:** Puedes ver la página en:
 https://kvothe1997.github.io/LasRecetasDeLita/
-</footer>
+
