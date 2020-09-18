@@ -12,7 +12,9 @@ Responsive static web application (HTML, CSS y JS). Estoy desarrollando una pág
   <li>p</li>
   <li>img</li>
 </ul>
+
 ## CSS
+
 <ul>
   <li>float, flex y grid</li>
   <li>font-... </li>
@@ -28,7 +30,6 @@ Responsive static web application (HTML, CSS y JS). Estoy desarrollando una pág
   <li>for</li>
 </ul>
 <footer>
-Puedes ver la página en:
-
+**Nota:** Puedes ver la página en:
 https://kvothe1997.github.io/LasRecetasDeLita/
 </footer>
