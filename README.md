@@ -30,6 +30,8 @@ Responsive static web application (HTML, CSS y JS). Estoy desarrollando una pág
   <li>for</li>
 </ul>
 
-**Nota:** Puedes ver la página en:
+### **Nota:** 
+
+Puedes ver la página en:
 https://kvothe1997.github.io/LasRecetasDeLita/
 
