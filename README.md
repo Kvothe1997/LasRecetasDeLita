@@ -21,6 +21,8 @@ Responsive static web application (HTML, CSS y JS). Estoy desarrollando una pág
   <li>overflow</li>
   <li>blur y backdrop-filter</li>
   <li>z-index</li>
+  <li>em y rem</li>
+  <li>@media</li>
 </ul>
 
 ## JS
