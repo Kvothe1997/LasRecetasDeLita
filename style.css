@@ -2,24 +2,109 @@
 
 Con @media se realiza adaptación a tamaño de pantalla. Se ha pensado en 3 tipos: Navegador desktop pantalla completa (>1000 px), navegador desktop a mitad de pantalla (500px-1000px) y pantalla celular iphone 7 plus(<500px).
 */
-* {
-  background-color: white;
-  border: 0px;
-  padding: 0px;
-  margin: 0px;
+
+/* Reset inicial */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: white;
+  font-size: 100%;
+  vertical-align: baseline;
 }
+
 body {
   overflow: visible; /* Hace visible el scroll */
 }
 header {
   text-align: center;
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: bolder;
   background-color: black;
   color: #5688ba;
-  padding: 2px 2px;
+  padding: 0.01rem 0.01rem;
 }
 
 body > nav > ul {
@@ -33,11 +118,11 @@ body > nav > ul > li {
   padding: 6px 12px;
   background-color: #5688ba;
   font-weight: bolder;
-  font-size: 1.6em;
+  font-size: 1.7rem;
 }
 @media (min-width: 500px) {
-  nav li {
-    font-size: 1.2em;
+  body > nav > ul > li {
+    font-size: 1.4rem;
   }
 }
 
@@ -85,17 +170,17 @@ article {
   flex-direction: column;
   overflow: hidden;
 }
-article h1 {
+article > h1 {
   background-color: black;
-  font-size: 2em;
+  font-size: 2.25rem;
   text-align: center;
   color: white;
-  padding-bottom: 0.2em;
+  padding-bottom: 0.25rem;
   border-radius: 5px 5px 0% 0%;
 }
 @media (min-width: 500px) {
   article h1 {
-    font-size: 1.3em;
+    font-size: 1.4rem;
   }
 }
 article img {
@@ -132,71 +217,159 @@ article img {
 .cerrar {
   color: #5688ba;
   background-color: black;
-  font-size: 2.5em;
+  font-size: 3rem;
   font-weight: bold;
   float: right;
-  margin-top: 0%;
-  margin-right: 2.5%;
+  margin-top: -0.5rem;
+  margin-right: 0.5rem;
 }
 .modal h2 {
   text-align: center;
   color: #5688ba;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   background-color: black;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-bottom: 2%;
-  grid-area: a;
-}
-.modalGrid {
-  position: relative;
-  padding: 2%;
-  display: grid;
-  grid:
-    "a b"
-    "c c";
-  grid-template-columns: 60% 40%;
-  grid-template-rows: auto auto;
-  column-gap: 1%;
-  justify-content: center;
-}
-.modalGrid > img {
-  grid-area: a;
-  min-height: 300px;
-  max-width: 90%;
-  margin: auto;
+  padding-left: 0.25rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
 }
 #ingredientes {
-  grid-area: b;
-  align-self: center;
+  margin: 0.5rem 0.4rem 0rem 0.4rem;
+}
+.modalGrid > img {
+  width: 100%;
+}
+.modalContent {
+  margin: 0.5rem 0.4rem 0.4rem 0.4rem;
+  font-size: 1.5rem;
+}
+@media (min-width: 500px) and (max-width: 1000px) {
+  .modal h2 {
+    font-size: 3rem;
+    padding-left: 0.25rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+  }
+  #ingredientes {
+    margin: 1rem 0.8rem 0rem 0.8rem;
+  }
+  .modalGrid > img {
+    width: 100%;
+  }
+  .modalContent {
+    margin: 1rem 0.8rem 0.8rem 0.8rem;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  .modal h2 {
+    font-size: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+  }
+  .modalGrid {
+    position: relative;
+    padding: 2%;
+    display: grid;
+    grid:
+      "a b"
+      "c c";
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto auto;
+    column-gap: 1%;
+    justify-content: center;
+  }
+  .modalGrid > img {
+    grid-area: a;
+    min-height: 300px;
+    max-width: 90%;
+    margin: auto;
+  }
+  #ingredientes {
+    grid-area: b;
+    align-self: center;
+  }
+  .modalContent {
+    grid-area: c;
+    margin: 1rem 0.8rem 0.8rem 0.8rem;
+    font-size: 1.5rem;
+  }
+}
+#ingredientes h3 {
+  font-weight: 800;
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
 }
 #ingredientes ul {
   margin-top: 10px;
   list-style: none;
   padding-left: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 #ingredientes ul li {
   position: relative;
-  padding-left: 1.5em; /* space to preserve indentation on wrap */
+  padding-left: 1.5rem; /* space to preserve indentation on wrap */
 }
 #ingredientes ul li:before {
   content: ""; /* placeholder for the SVG */
   position: absolute;
   left: 0; /* place the SVG at the start of the padding */
-  width: 1em;
-  height: 1em;
+  width: 1rem;
+  height: 1rem;
   background: url("data:image/svg+xml;utf8,<?xml version='1.0' encoding='utf-8'?><svg width='18' height='18' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z'/></svg>")
     no-repeat;
 }
-.modalContent {
-  grid-area: c;
-  margin-top: 25px;
-  margin-left: 25px;
+
+.modalContent > h3 {
+  font-weight: 800;
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
 }
-.modalContent > ol,
-.modalContent > ul {
-  margin-top: 10px;
-  margin-left: 25px;
+.modalContent > ol {
+  list-style: none;
+  font-weight: 400;
+}
+.modalContent > ol > li {
+  list-style-position: inside;
+  margin: 0 0 0.5rem 0;
+  padding-top: 0.5rem;
+  padding-left: 2.25rem;
+  display: block;
+  position: relative;
+  counter-increment: inst;
+  text-align: justify;
+}
+.modalContent > ol > li::before {
+  content: counter(inst);
+
+  background: black;
+  color: #5688ba;
+  border-radius: 0.2rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 0 0.25rem;
+  left: 0%;
+  top: 0.55rem;
+  position: absolute;
+}
+.modalContent > ol > li > p {
+  text-align: justify;
+  margin-left: 10%;
+  margin-top: 2.5%;
+  font-style: italic;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.modalContent > ol > li > p > strong {
+  color: #5688ba;
+  -webkit-text-stroke: black;
+  -webkit-text-stroke-width: 0.025rem;
+}
+.modalContent > p {
+  margin-top: 1.5rem;
+  text-align: center;
 }
 footer {
   text-align: center;
