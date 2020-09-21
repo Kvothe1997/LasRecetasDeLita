@@ -9,8 +9,9 @@ Responsive static web application (HTML, CSS y JS). Estoy desarrollando una pág
   <li>section y article</li>
   <li>h1, h2, h3...</li>
   <li>ul y ol</li>
-  <li>p</li>
+  <li>p y strong</li>
   <li>img</li>
+  <li>wbr</li>
 </ul>
 
 ## CSS
