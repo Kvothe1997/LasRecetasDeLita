@@ -278,6 +278,7 @@ article img {
 .modalContent > ol {
   list-style: none;
   font-weight: 400;
+  margin-bottom: 2rem;
 }
 .modalContent > ol > li {
   list-style-position: inside;
@@ -315,10 +316,71 @@ article img {
   -webkit-text-stroke: black;
   -webkit-text-stroke-width: 0.025rem;
 }
+.modalContent > ol > li > ol {
+  list-style: none;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+.modalContent > ol > li > ol > li {
+  list-style-position: inside;
+  margin: 0 0 0.5rem 0;
+  padding-top: 0.5rem;
+  padding-left: 1.75rem;
+  display: block;
+  position: relative;
+  counter-increment: inst1;
+  text-align: justify;
+}
+.modalContent > ol > li > ol > li::before {
+  content: counter(inst1);
+  background: #5688ba;
+  color: black;
+  border-radius: 0.2rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 0 0.25rem;
+  left: 0%;
+  top: 0.8rem;
+  position: absolute;
+}
+.modalContent > ul {
+  margin-top: 0.5rem;
+  list-style: none;
+  padding-left: 0;
+  font-weight: 400;
+}
+.modalContent > ul > li {
+  position: relative;
+  padding-left: 1.5rem; /* space to preserve indentation on wrap */
+  margin-bottom: 0.15rem;
+}
+.modalContent > ul > li::before {
+  content: ""; /* placeholder for the SVG */
+  position: absolute;
+  left: 0; /* place the SVG at the start of the padding */
+  top: 0.55rem;
+  width: 1rem;
+  height: 1rem;
+  background: url("data:image/svg+xml;utf8,<?xml version='1.0' encoding='utf-8'?><svg width='18' height='18' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z'/></svg>")
+    no-repeat;
+}
 .modalContent > p {
-  margin-top: 1.5rem;
   text-align: center;
 }
+.modalContent > p > a {
+  text-decoration: none;
+  border: 2px solid black;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  /* background-color: black; */
+  color: #5688ba;
+  padding: 0.1rem 1rem;
+  border-radius: 500px;
+  margin: auto;
+}
+/* Mediante media queries se ajusta el modal para 2 tipos de pantalla (laptop:>1000px y ventana en laptop a la mitad: entre 500px y 1000px). Por defecto el estilo está orientado a celular(<500px). */
 @media (min-width: 500px) and (max-width: 1000px) {
   .modal h2 {
     font-size: 3rem;
