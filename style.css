@@ -133,12 +133,14 @@ body > nav > ul > li {
 }
 
 @media (hover: hover) {
-  nav li:hover {
-    /* background-color: rgb(236, 235, 235); */
+  body > nav > ul > li:hover {
     background-color: #b7cbdf;
-    /* color: black; */
     cursor: pointer;
   }
+}
+body > nav > ul > li:active {
+  box-shadow: inset 0px 0px 0.3rem black;
+  background-color: #b7cbdf;
 }
 section {
   display: flex;
@@ -234,6 +236,16 @@ article > img {
   margin-top: -0.5rem;
   margin-right: 0.5rem;
   cursor: pointer;
+}
+@media (hover: hover) {
+  .cerrar:hover {
+    color: #b7cbdf;
+  }
+}
+.cerrar:active {
+  text-shadow: 0 0 0.25rem #5688ba;
+  color: #b7cbdf;
+  font-weight: 500;
 }
 .modal > h2 {
   text-align: center;

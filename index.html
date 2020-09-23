@@ -17,7 +17,7 @@
     <!-- Menú -->
     <nav>
       <ul>
-        <li>Medidas y equivalencias</li>
+        <li ontouchstart="">Medidas y equivalencias</li>
       </ul>
     </nav>
     <!-- El contenedor de cada tarjeta es un section y cada tarjeta es un article. Los article están agrupados en divs. Cada div es una columna y con flex (CSS3) se agrupan uno al lado del otro En cada article está el título(h1) y la imagen. Además, hay un div conteniendo al modal(pop up) que se abre cuando se hace click en cada tarjeta -->
@@ -33,7 +33,7 @@
           <img src="Images/panqueques.jpg" alt="Panqueques caseros sobre un plato blanco." />
           <!-- Modal Panqueques -->
           <div class="modal" id="panqueques">
-            <span class="cerrar">&times;</span>
+            <span class="cerrar" ontouchstart="">&times;</span>
             <h2>Panqueques</h2>
             <div class="modalGrid">
               <img src="Images/panqueques.jpg" alt="Panqueques caseros sobre un plato blanco." />
@@ -81,7 +81,7 @@
           <img src="Images/muffins.jpg" alt="6 Muffins caseros de maní y arándanos en una bandeja negra." />
           <!-- Modal Muffins -->
           <div class="modal" id="muffins">
-            <span class="cerrar">&times;</span>
+            <span class="cerrar" ontouchstart="">&times;</span>
             <h2>Muffins</h2>
             <div class="modalGrid">
               <img src="Images/muffins.jpg" alt="6 Muffins caseros de maní y arándanos en una bandeja negra." />
@@ -125,7 +125,7 @@
           <img src="Images/pie_maracuya.jpg" alt="Pie de maracuyá casero" />
           <!-- Modal Pie de maracuyá -->
           <div class="modal" id="pieDeMaracuya">
-            <span class="cerrar">&times;</span>
+            <span class="cerrar" ontouchstart="">&times;</span>
             <h2>Pie de maracuyá</h2>
             <div class="modalGrid">
               <img src="Images/pie_maracuya.jpg" alt="Pie de maracuyá casero" />
@@ -150,7 +150,6 @@
                     <p class="sidenote">
                       <strong>Nota:</strong> Se debe mezclar con la mano abierta hasta que la consistencia sea de masa desmenuzada.
                     </p>
-           z
                   </li>
                   <li>Hacer un hoyo en la mezcla y agregar el agua, la leche, las yemas y la vainilla. Mezclar hasta formar una masa que despegue de la mano. </li>
                   <li>Hechar harina en una mesa y poner encima la masa. Estirarla con un rodillo hasta formar una circunferencia unos centímetros más grande que el tamaño del molde. <p class="sidenote">
@@ -204,8 +203,8 @@
           <h1>...</h1>
           <img src="Images/panqueques.jpg" alt="..." />
           <!-- Modal ... -->
-          <div class="modal" id="ABC...">
-            <span class="cerrar">&times;</span>
+          <div class="modal" id="A...">
+            <span class="cerrar" ontouchstart="">&times;</span>
             <h2>...</h2>
             <div class="modalGrid">
               <img src="Images/panqueques.jpg" alt="..." />
@@ -248,8 +247,8 @@
           <h1>...</h1>
           <img src="Images/panqueques.jpg" alt="..." />
           <!-- Modal ... -->
-          <div class="modal" id="ABC...">
-            <span class="cerrar">&times;</span>
+          <div class="modal" id="B...">
+            <span class="cerrar" ontouchstart="">&times;</span>
             <h2>...</h2>
             <div class="modalGrid">
               <img src="Images/panqueques.jpg" alt="..." />
@@ -289,8 +288,8 @@
           <h1>...</h1>
           <img src="Images/panqueques.jpg" alt="..." />
           <!-- Modal ... -->
-          <div class="modal" id="ABC...">
-            <span class="cerrar">&times;</span>
+          <div class="modal" id="C...">
+            <span class="cerrar" ontouchstart="">&times;</span>
             <h2>...</h2>
             <div class="modalGrid">
               <img src="Images/panqueques.jpg" alt="..." />
@@ -334,7 +333,7 @@
           <img src="Images/pan_molde.jpg" alt="Pan de molde casero sobre bandeja de metal. A su costado hay un cuchillo con mango blanco." />
           <!-- Modal Pan de molde -->
           <div class="modal" id="pan_molde">
-            <span class="cerrar">&times;</span>
+            <span class="cerrar" ontouchstart="">&times;</span>
             <h2>Pan de molde</h2>
             <div class="modalGrid">
               <img src="Images/pan_molde.jpg" alt="Pan de molde casero sobre bandeja de metal. A su costado hay un cuchillo con mango blanco." />
@@ -381,8 +380,8 @@
           <h1>...</h1>
           <img src="Images/panqueques.jpg" alt="..." />
           <!-- Modal ... -->
-          <div class="modal" id="ABC...">
-            <span class="cerrar">&times;</span>
+          <div class="modal" id="D...">
+            <span class="cerrar" ontouchstart="">&times;</span>
             <h2>...</h2>        
             <div class="modalGrid">
               <img src="Images/panqueques.jpg" alt="..." />
@@ -420,7 +419,9 @@
       </div>
     </section>
     <footer>&copy;2020 Luis Enrique Barreto Periche</footer>
-
+<!-- Ideas:
+1)que se agranden las cards al hovear sobre ellas. Y al hacer click se hagan más pequeñas
+ 2) -->
     <script src="myscript.js"></script>
   </body>
 </html>
