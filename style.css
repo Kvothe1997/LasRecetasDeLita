@@ -113,12 +113,18 @@ body > nav > ul {
   background-color: #5688ba;
   justify-content: left;
   list-style-type: none;
+  padding: 0.25rem;
 }
 body > nav > ul > li {
-  padding: 6px 12px;
+  padding: 0.25rem 1rem;
   background-color: #5688ba;
   font-weight: bolder;
   font-size: 1.7rem;
+  /* -webkit-text-stroke: black; */
+  /* -webkit-text-stroke-width: 0.05rem; */
+  border-radius: 500px;
+  color: black;
+  border: 0.01rem solid #5688ba;
 }
 @media (min-width: 500px) {
   body > nav > ul > li {
@@ -128,8 +134,10 @@ body > nav > ul > li {
 
 @media (hover: hover) {
   nav li:hover {
-    background-color: black;
-    color: #5688ba;
+    /* background-color: rgb(236, 235, 235); */
+    background-color: #b7cbdf;
+    /* color: black; */
+    cursor: pointer;
   }
 }
 section {
@@ -177,18 +185,20 @@ article > h1 {
   color: white;
   padding-bottom: 0.25rem;
   border-radius: 5px 5px 0% 0%;
+  cursor: pointer;
 }
 @media (min-width: 500px) {
-  article h1 {
+  article > h1 {
     font-size: 1.4rem;
   }
 }
-article img {
+article > img {
   height: 100%;
   width: 100%;
   border-radius: 0px 0px 1% 1%;
   vertical-align: middle;
   object-fit: contain;
+  cursor: pointer;
 }
 #fondoBorroso {
   display: none;
@@ -223,8 +233,9 @@ article img {
   float: right;
   margin-top: -0.5rem;
   margin-right: 0.5rem;
+  cursor: pointer;
 }
-.modal h2 {
+.modal > h2 {
   text-align: center;
   color: #5688ba;
   font-size: 3rem;
@@ -378,6 +389,8 @@ article img {
 .modalContent > p > a {
   text-decoration: none;
   border: 0.15rem solid #5688ba;
+  -webkit-text-stroke: black;
+  -webkit-text-stroke-width: 0.05rem;
   font-size: 1.5rem;
   font-weight: bolder;
   /* background-color: black; */
@@ -445,8 +458,7 @@ article img {
   }
   .modalGrid > img {
     grid-area: a;
-    min-height: 300px;
-    max-width: 90%;
+    max-width: 70%;
     margin: auto;
   }
   #ingredientes {
