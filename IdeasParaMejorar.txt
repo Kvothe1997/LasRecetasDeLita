@@ -1,0 +1,30 @@
+Ideas
+
+1) Terminar las dos recetas pan y muffins
+2) Agregar las 4 cards que faltan : Queque marmoleado, selva negra, pie de limón, alfajores.
+3) Agregar modal de medidas y equivalencias
+4)Botón X: hacerlo flotar y siempre presente al escrolear.
+5)Agregar mis redes sociales en el footer.
+6)Pequeña historia de la página en el footer.
+5) Hacerla PWA.
+
+*)Crear opción de comentarios en cada modal.
+
+*)Poder buscar una card ingresando su nombre o letra inicial (en el cell hacer que ese buscador se quede fijo al escrolear hacia abajo.)
+
+*)que se agranden las cards al hovear sobre ellas. Y al hacer click se hagan más pequeñas (que de la impresión que se hunde). El click :Active debe funcionar en apple. Hacer que al hacer click la card gire antes de salir el modal.y se haga grande. Como si el modal saliera de la parte de atrás de la card.
+
+*)En hacer que las cards funcionen bien en 500px a 1000px. Que se pongan uno abajo de otro.
+
+*) Hacer que se puedan guardar offline las recetas que se elijan.
+
+*)Poner rating de 5 estrellas en cada modal y permitir que los usuarios den un rating
+
+*)Poner la opción de compartir receta en redes sociales al inicio del modal. Float right tal vez
+
+*)Modo oscuro
+
+*)Poner el modal al inicio a reingresar al modal
+
+
+
