@@ -34,5 +34,5 @@ Responsive static web application (HTML, CSS y JS). Estoy desarrollando una pág
   <li>Modal con JS y CSS</li>
 </ul>
 
- **Nota:** Puedes ver la página en: https://kvothe1997.github.io/LasRecetasDeLita/
+ **Nota:** Puedes ver la página en: https://kvothe1997.github.io/LasRecetasDeLita1.0/
 
