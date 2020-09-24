@@ -1,4 +1,4 @@
-# LasRecetasDeLita
+# Las Recetas De Lita
 Responsive static web application (HTML, CSS y JS). Estoy desarrollando una página web estática y responsive para aplicar mis conocimientos básicos de HTML, CSS y JS. No he utilizado librerías pues me gustaría hacerla con HTML5 puro, CSS3 puro y JS puro. A continuación, listo algunas etiquetas, propiedades y funciones utilizadas en cada lenguaje.
 
 ## HTML
@@ -8,10 +8,9 @@ Responsive static web application (HTML, CSS y JS). Estoy desarrollando una pág
   <li>div y span</li>
   <li>section y article</li>
   <li>h1, h2, h3...</li>
-  <li>ul y ol</li>
-  <li>p y strong</li>
+  <li>p, wbr y strong</li>
   <li>img</li>
-  <li>wbr</li>
+  <li>table, td y tr</li>
 </ul>
 
 ## CSS
@@ -32,6 +31,7 @@ Responsive static web application (HTML, CSS y JS). Estoy desarrollando una pág
   <li>EventListener anidados</li>
   <li>for</li>
   <li>Modal con JS y CSS</li>
+  <li>querySelectorAll</li>
 </ul>
 
  **Nota:** Puedes ver la página en: https://kvothe1997.github.io/LasRecetasDeLita1.0/
