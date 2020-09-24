@@ -16,7 +16,7 @@ function cerrarModal(e) {
 //abrirModal se activa al hacer click en cualquier card (article)
 function abrirModal(evt) {
   actual = evt.currentTarget;
-  let modalID = evt.currentTarget.lastElementChild.getAttribute("id");
+  let modalID = actual.lastElementChild.getAttribute("id");
   modal = document.getElementById(modalID);
   fondoBorroso.style.display = "block"; //pone borroso el fondo
   modal.style.display = "block"; //muestra el modal del card clickeado
@@ -32,5 +32,10 @@ function abrirModal(evt) {
 for (let i = 0; i < document.getElementsByTagName("ARTICLE").length; i++) {
   document
     .getElementsByTagName("ARTICLE")
+    [i].addEventListener("click", abrirModal, true);
+}
+for (let i = 0; i < document.querySelectorAll("nav > ul > li").length; i++) {
+  document
+    .querySelectorAll("nav > ul > li")
     [i].addEventListener("click", abrirModal, true);
 }

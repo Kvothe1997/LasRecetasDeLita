@@ -1,11 +1,8 @@
 Ideas
-
-1) Terminar las dos recetas pan y muffins
 2) Agregar las 4 cards que faltan : Queque marmoleado, selva negra, pie de limón, alfajores.
 3) Agregar modal de medidas y equivalencias
-4)Botón X: hacerlo flotar y siempre presente al escrolear.
-5)Agregar mis redes sociales en el footer.
-6)Pequeña historia de la página en el footer.
+5) Agregar mis redes sociales en el footer.
+6) Pequeña historia de la página en el footer.
 5) Hacerla PWA.
 
 *)Crear opción de comentarios en cada modal.

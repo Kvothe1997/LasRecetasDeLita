@@ -229,13 +229,15 @@ article > img {
 /* El botón para cerrar */
 .cerrar {
   color: #5688ba;
-  background-color: black;
+  background-color: transparent;
   font-size: 3rem;
   font-weight: bold;
-  float: right;
+  position: fixed;
+  right: 5.5%;
   margin-top: -0.5rem;
   margin-right: 0.5rem;
   cursor: pointer;
+  z-index: 5;
 }
 @media (hover: hover) {
   .cerrar:hover {
