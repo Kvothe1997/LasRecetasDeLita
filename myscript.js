@@ -1,4 +1,4 @@
-var actual; //actual representa el article en el que se ha hecho click
+var actual; //actual representa el article o nav>ul>li en el que se ha hecho click
 var modal; //representa el lastchild del article, corresponde al div que contiene el modal en el html.
 
 //La función cerrarModal se activa al hacer click en la x del modal
@@ -11,6 +11,9 @@ function cerrarModal(e) {
     .removeEventListener("click", cerrarModal, false); //quita el listener de la x del modal.
   fondoBorroso.removeEventListener("click", cerrarModal, false); //quita listener de fondo borroso
   document.body.style.overflow = "visible"; //muestra main scrollbar
+  if ((actual.tagName = "LI")) {
+    actual.style.cursor = "pointer";
+  }
 }
 
 //abrirModal se activa al hacer click en cualquier card (article)
@@ -26,6 +29,9 @@ function abrirModal(evt) {
   fondoBorroso.addEventListener("click", cerrarModal, false); //activa event listener en fondo borroso para que se cierre modal al clickear en fondo borroso.
   actual.removeEventListener("click", abrirModal, true); //quita el eventlistener del card (article) seleccionado.
   document.body.style.overflow = "hidden"; //oculta main scrollbar
+  if ((actual.tagName = "LI")) {
+    actual.style.cursor = "default";
+  }
 }
 
 //Activa eventListener en cada card (article)

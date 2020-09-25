@@ -98,7 +98,7 @@ video {
 body {
   overflow: visible; /* Hace visible el scroll */
 }
-header {
+header > h1 {
   text-align: center;
   font-size: 4rem;
   font-weight: bolder;
@@ -120,8 +120,6 @@ body > nav > ul > li {
   background-color: #5688ba;
   font-weight: bolder;
   font-size: 1.7rem;
-  /* -webkit-text-stroke: black; */
-  /* -webkit-text-stroke-width: 0.05rem; */
   border-radius: 500px;
   color: black;
   border: 0.01rem solid #5688ba;
@@ -141,6 +139,48 @@ body > nav > ul > li {
 body > nav > ul > li:active {
   box-shadow: inset 0px 0px 0.3rem black;
   background-color: #b7cbdf;
+}
+.modalTables {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+.modalTables > table {
+  flex-basis: 40%;
+  min-width: 300px;
+  margin: 1rem 0.5rem 0rem 0.5rem;
+  border: 0.5rem solid #b7cbdf;
+  text-align: center;
+  flex-grow: 1;
+}
+.modalTables > table th {
+  background: #b7cbdf;
+  color: black;
+  -webkit-text-stroke: black;
+  -webkit-text-stroke-width: 0.05rem;
+  padding: 0.25rem;
+  font-size: 2.25rem;
+}
+.modalTables > table tbody {
+  font-weight: 500;
+  font-size: 2rem;
+}
+@media (min-width: 500px) {
+  .modalTables {
+    padding: 1rem;
+  }
+  .modalTables > table {
+    margin: 1rem 1.5rem 0.5rem 1.5rem;
+  }
+  .modalTables > table th {
+    font-size: 1.5rem;
+  }
+  .modalTables > table tbody {
+    font-size: 1.5rem;
+  }
 }
 section {
   display: flex;
