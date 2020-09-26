@@ -1,5 +1,5 @@
 Ideas
-2) Agregar las 4 cards que faltan : Queque marmoleado, selva negra, pie de limón, alfajores.
+2) Agregar las 3 cards que faltan : Queque marmoleado, selva negra, pie de limón, alfajores.
 5) Hacerla PWA.
 
 *)Crear opción de comentarios en cada modal.
