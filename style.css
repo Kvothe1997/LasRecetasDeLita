@@ -582,3 +582,61 @@ footer {
   color: black;
   font-weight: bolder;
 }
+footer > div {
+  background: #5688ba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer > div > aside {
+  background: #5688ba;
+  flex-basis: 40%;
+  flex-grow: 1;
+  min-width: 300px;
+  margin: 0.5rem;
+}
+footer > div > aside > h2 {
+  background: #5688ba;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+footer > div > aside > p {
+  background: #5688ba;
+  font-size: 1rem;
+}
+footer > div > div {
+  background: #5688ba;
+  flex-basis: 40%;
+  flex-grow: 1;
+  min-width: 300px;
+  margin: 0.5rem;
+}
+footer > div > div > a {
+  text-decoration: none;
+  background: #5688ba;
+  margin: 1rem;
+  align-self: right;
+}
+footer > div > div > a > img {
+  width: 2rem;
+  background: #5688ba;
+}
+footer > p {
+  background: #5688ba;
+  font-size: 1.3rem;
+}
+@media (min-width: 500px) {
+  footer > div > aside > h2 {
+    font-size: 1rem;
+  }
+  footer > div > aside > p {
+    font-size: 0.75rem;
+  }
+  footer > div > div > a > img {
+    width: 1.5rem;
+  }
+  footer > p {
+    font-size: 1rem;
+  }
+}
