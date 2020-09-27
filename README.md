@@ -1,5 +1,5 @@
-# Las Recetas De Lita
-Responsive static web application (HTML, CSS y JS). Estoy desarrollando una página web estática y responsive para aplicar mis conocimientos básicos de HTML, CSS y JS. No he utilizado librerías pues me gustaría hacerla con HTML5 puro, CSS3 puro y JS puro. A continuación, listo algunas etiquetas, propiedades y funciones utilizadas en cada lenguaje.
+# PWA
+Responsive, static and single page PWA (HTML, CSS y JS). Estoy desarrollando una página web estática y responsive para aplicar mis conocimientos básicos de HTML, CSS y JS. No he utilizado librerías pues me gustaría hacerla con HTML5 puro, CSS3 puro y JS puro. A continuación, listo algunas etiquetas, propiedades y funciones utilizadas en cada lenguaje.
 
 ## HTML
 <ul>
@@ -32,6 +32,8 @@ Responsive static web application (HTML, CSS y JS). Estoy desarrollando una pág
   <li>for</li>
   <li>Modal con JS y CSS</li>
   <li>querySelectorAll</li>
+  <li>Service Workers</li>
+  <li>.json, manifest </li>
 </ul>
 
  **Nota:** Puedes ver la página en: https://kvothe1997.github.io/Responsive_Static_web_app/
