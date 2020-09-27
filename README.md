@@ -36,5 +36,5 @@ Responsive, static and single page PWA (HTML, CSS y JS). Estoy desarrollando una
   <li>.json, manifest </li>
 </ul>
 
- **Nota:** Puedes ver la página en: https://kvothe1997.github.io/Responsive_Static_web_app/
+ **Nota:** Puedes ver la página en: https://kvothe1997.github.io/PWA-pure-JS-CSS-y-HTML/
 
