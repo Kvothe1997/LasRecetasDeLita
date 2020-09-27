@@ -2,7 +2,7 @@
   "name": "Las recetas de Lita",
   "short_name": "Recetas",
   "description": "Postres y pan hechos en casa. Recetas comunes y cómo puedes hacerlas realidad en casa paso a paso...",
-  "scope": "https://kvothe1997.github.io/",
+  "scope": "./",
   "icons": [
     {
       "src": "Iconos/bake.svg",
