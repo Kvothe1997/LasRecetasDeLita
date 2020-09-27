@@ -8,6 +8,10 @@ Ideas
 
 *)que se agranden las cards al hovear sobre ellas. Y al hacer click se hagan más pequeñas (que de la impresión que se hunde). El click :Active debe funcionar en apple. Hacer que al hacer click la card gire antes de salir el modal.y se haga grande. Como si el modal saliera de la parte de atrás de la card.
 
+*)Probar poner transition en modal. Poner translate fuera en modal normal y con js hacer que el modal se translate a la pantalla principal usando su if. Para evitar que todos los modales hagan lo mismo.
+
+*)poner mis event listeners dentro de otro event listener cuyo trigger sea OnDocumentLoad
+
 *)En hacer que las cards funcionen bien en 500px a 1000px. Que se pongan uno abajo de otro.
 
 *) Hacer que se puedan guardar offline las recetas que se elijan.

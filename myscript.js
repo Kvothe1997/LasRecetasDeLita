@@ -1,3 +1,13 @@
+//--------------------------PWA--------------------------
+// Check that service workers are supported
+if ("serviceWorker" in navigator) {
+  // Use the window load event to keep the page load performant
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/service-worker.js");
+  });
+}
+
+//--------------------Lógica de la página----------------
 var actual; //actual representa el article o nav>ul>li en el que se ha hecho click
 var modal; //representa el lastchild del article, corresponde al div que contiene el modal en el html.
 
