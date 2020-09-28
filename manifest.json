@@ -5,7 +5,7 @@
   "scope": "./",
   "icons": [
     {
-      "src": "./Iconos/bake.svg",
+      "src": "./bake.svg",
       "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "any maskable"
