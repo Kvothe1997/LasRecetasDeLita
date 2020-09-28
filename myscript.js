@@ -3,8 +3,8 @@
 if ("serviceWorker" in navigator) {
   // Use the window load event to keep the p  age load performant
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("/PWA-pure-JS-CSS-y-HTML/sw.js", {
-      scope: "/PWA-pure-JS-CSS-y-HTML/",
+    navigator.serviceWorker.register("./service-worker.js", {
+      scope: "./",
     });
   });
 }

@@ -5,13 +5,13 @@
   "scope": "./",
   "icons": [
     {
-      "src": "Iconos/bake.svg",
+      "src": "./Iconos/bake.svg",
       "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "any maskable"
     }
   ],
-  "start_url": "index.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#5688ba",
   "theme_color": "white",

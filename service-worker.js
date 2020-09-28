@@ -2,20 +2,20 @@ const CACHE_NAME = "v1_cache_recetas_lita";
 
 // CODELAB: Add list of files to cache here.
 const FILES_TO_CACHE = [
-  "/PWA-pure-JS-CSS-y-HTML/index.html",
-  "/PWA-pure-JS-CSS-y-HTML/myscript.js",
-  "/PWA-pure-JS-CSS-y-HTML/style.css",
-  "/PWA-pure-JS-CSS-y-HTML/Iconos/bake.svg",
-  "/PWA-pure-JS-CSS-y-HTML/Iconos/facebook.svg",
-  "/PWA-pure-JS-CSS-y-HTML/Iconos/github.svg",
-  "/PWA-pure-JS-CSS-y-HTML/Iconos/instagram.svg",
-  "/PWA-pure-JS-CSS-y-HTML/Iconos/linkedin.svg",
-  "/PWA-pure-JS-CSS-y-HTML/Iconos/whatsapp.svg",
-  "/PWA-pure-JS-CSS-y-HTML/Images/muffins.webp",
-  "/PWA-pure-JS-CSS-y-HTML/Images/pan_molde.webp",
-  "/PWA-pure-JS-CSS-y-HTML/Images/panqueques_avena.webp",
-  "/PWA-pure-JS-CSS-y-HTML/Images/panqueques.webp",
-  "/PWA-pure-JS-CSS-y-HTML/Images/pie_maracuya.webp",
+  "./index.html",
+  "./myscript.js",
+  "./style.css",
+  "./Iconos/bake.svg",
+  "./Iconos/facebook.svg",
+  "./Iconos/github.svg",
+  "./Iconos/instagram.svg",
+  "./Iconos/linkedin.svg",
+  "./Iconos/whatsapp.svg",
+  "./Images/muffins.webp",
+  "./Images/pan_molde.webp",
+  "./Images/panqueques_avena.webp",
+  "./Images/panqueques.webp",
+  "./Images/pie_maracuya.webp",
 ];
 
 self.addEventListener("install", (evt) => {
