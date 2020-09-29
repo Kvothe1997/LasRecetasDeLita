@@ -17,6 +17,7 @@ const FILES_TO_CACHE = [
   "./Images/panqueques_avena.webp",
   "./Images/panqueques.webp",
   "./Images/pie_maracuya.webp",
+  "./Images/selva_negra.webp",
 ];
 
 self.addEventListener("install", (evt) => {
