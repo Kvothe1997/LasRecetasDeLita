@@ -467,9 +467,6 @@ article > img {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
-.modalContent > p:first-child {
-  /* margin-bottom: 100rem; */
-}
 .modalContent > p > a {
   text-decoration: none;
   border: 0.15rem solid #5688ba;
